@@ -1,0 +1,221 @@
+Methods:
+
+Create a Methods:
+public class Methods1 {
+
+	public int ValidateHeader() // This will return Integer. We can return void, string which must be declared
+	{
+		System.out.println("Header is validated");
+		return 10;
+	}
+}
+
+Call the Methods
+
+public class Parent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Navigated to home page");
+		Methods1 m=new Methods1 (); // Creating object for method
+		m.ValidateHeader(); //Calling the method
+		System.out.println(m.ValidateHeader()); //Printing the return type integer
+		
+	}
+
+}
+
+String Handling:
+
+String str=("Payment $100 paid"); //We can use this type to call class only for string class
+System.out.println(str.charAt(8)); //Check where is $ symbol in 8th index
+System.out.println(str.indexOf("$"));// Displayed the index value
+System.out.println(str.substring(8));//Print the sting from 8th index
+
+Inheritance:
+
+Getting the data from one class to another by using extends keyword
+
+public class GrandFather {
+
+	public static void main(String[] args) {
+			}
+
+	public void city() {
+		System.out.println("Chennai");
+	}
+
+	public void country() {
+		System.out.println("India");
+	}
+	String state="Tamil nadu";
+}
+
+
+public class Son extends GrandFather {
+
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.city(); //Accessing method from grandfather class
+		s.country(); //Accessing method from grandfather class
+		System.out.println(s.state); //Accessing variable from grandfather class
+
+	}
+	
+}
+
+Interface:
+
+It is a client agreement between actual code and class implementation
+We have to use Implement keyword
+We can have multiple interface to same class by added “,”
+
+public interface BankingClient {
+	public void paycreditcard(); //Only method name should be used
+
+	}
+
+
+public class ImplementInterface implements BankingClient{
+
+	public static void main(String[] args) {
+}
+	@Override
+	public void paycreditcard() {
+			
+	}}
+
+Polymorphism
+
+In interface we can just filter our method in the implemented class which have more than one interface or non interface method
+	
+Array:
+Single dimensional array	
+int a[] = new int[5]; // Declared the array and allocate memory for 5 values
+		a[0] = 2;
+		a[1] = 4;
+		a[2] = 6;
+		a[3] = 8;
+		a[4] = 10;
+int b[]= {1,3,5,7,9}; // Declared the array and dynamic allocation memory
+
+Multi dimensional array	
+int a[][] = new int[2][3]; // Decalred multidimentional array with 2 rows and 3 columns
+		a[0][0] = 2; 
+		a[0][1] = 4;
+		a[0][2] = 8;
+		a[1][0] = 4;
+		a[1][1] = 8;
+		a[1][2] = 16;
+int b[][] = { { 2, 4, 8 }, { 4, 8, 16 }, { 1, 3, 5 } }; // Decalred multidimentional array with 3 rows and 3 columns
+
+Date:
+Add import java.util.Date;
+
+Date d = new Date();
+System.out.println(d.toString());
+SimpleDateFormat sdf = new SimpleDateFormat("M/d/Y"); // Uppercase M for month
+System.out.println(sdf.format(d)); // we have to use format method and bring the date object
+SimpleDateFormat sdf1 = new SimpleDateFormat("M/d/Y hh:mm:ss");
+System.out.println(sdf1.format(d));
+
+Calendar:
+Add import java.util.Calendar;
+Calendar cal = Calendar.getInstance();
+SimpleDateFormat sdf = new SimpleDateFormat("M/d/Y hh:mm:ss");
+System.out.println(sdf.format(cal.getTime()));// we have to use format method and bring the date object
+
+System.out.println(cal.get(Calendar.DAY_OF_MONTH)); // Many option are there in calendar method
+
+Construtor: 
+Construtor is a block of code whenever an object is created
+Contractor will not return any values
+Name of constructor should be class name
+Constructor will call implicit when constructor is not defined 
+
+Super Keyword:
+
+When you have a conflict in variable/method name in classes we have to use the super keyword of parent variable. 
+First preference  to local variable/method
+
+This Keyword:
+
+When local and global variable have same name, Local varible will be called. To use global variable in the method use THIS keyword. 
+
+public class ThisDemo {
+
+	int a=2;
+	public void getData()
+	{
+		int a=3;
+		System.out.println(a);
+		System.out.println(this.a);
+		int b=a+this.a;
+		System.out.println(b);
+	}
+			
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ThisDemo td = new ThisDemo();
+		td.getData();
+
+	}
+
+}
+Final Keyword:
+
+It is a constant variable/method/class. When we want to set the value of the variable and not the change and remain constant. We have to use FINAL keyword. 
+
+If we name the class as final we can't extend as parent in inheritance. 
+In method we can't override the method. 
+
+Packages:
+Packages are collection of classes.
+Java.land is default package in build in java compiler, so no need to import.
+For other packages we need to import.
+
+Syntax:
+Import packagename.classname. 
+
+Ex:
+Import java.util;
+Import java.io;
+
+
+Access Modifier:
+Types:
+Public: We can access method/variable in any package.
+Private: We can access only in the same class not in other classes
+Protected: only extended child class can access the variable/methods in same package and other packages as well 
+Default: We can access method only in the package. So we can access in other package
+
+void getData()
+	{
+		System.out.println(a);
+		}
+
+Exception Handling:
+Try/catch
+If we know error in particular code we can put the code in try/catch exception handling and run the code without failing
+
+One try can have multiple catch
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a=10;
+		int b=0;
+		
+		try
+		{
+			int c=a/b;
+			System.out.println(c);
+		}
+		catch(Exception e)
+		{
+			System.out.println("I catched an error");
+		}
+
+Finally: 
+Will execute will irrespective of any exception thrown
+We can use to close the browser or delete cookies we can use as break. 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite1]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNGPackage.TC05_Parameter">
+        <methods>
+          <include name="WebloginJewelloan"/>
+          <include name="APIloginJewelloan"/>
+        </methods>
+      </class> <!-- TestNGPackage.TC05_Parameter -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test Suite1] -->
