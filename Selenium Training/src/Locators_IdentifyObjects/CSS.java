@@ -16,7 +16,7 @@ public class CSS {
 		System.out.println(driver.getCurrentUrl()); // To get current url
 		// tagName[attribute='value'] or tagName#id tagName#classname--when we have ID/classname
 		driver.findElement(By.cssSelector("input[id='email']")).sendKeys("Hello");
-		driver.findElement(By.cssSelector("input[id='pass']")).sendKeys("password12345");
+		driver.findElement(By.cssSelector("[id='pass']")).sendKeys("password12345"); // CSS without tagname
 		driver.findElement(By.cssSelector("#loginbutton")).click();  // Xpath
 		driver.close();
 	}
