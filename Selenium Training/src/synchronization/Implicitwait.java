@@ -1,3 +1,7 @@
+package synchronization;
+
+
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -5,30 +9,24 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TC18_IMP_ECXP_Wait {
+public class Implicitwait {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium Training\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);//Implicit Wait		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS); //Implicit Wait
 		driver.get("https://www.expedia.ca/");
-
+		
 		driver.findElement(By.xpath("//button[@id='tab-hotel-tab-hp']")).click();
 		WebElement destination = driver.findElement(By.xpath("//input[@id='hotel-destination-hp-hotel']"));
 		destination.clear();
 		destination.sendKeys("NEWYORK");
 		destination.sendKeys(Keys.ENTER);
-		//Explicit Wait
-		WebDriverWait d = new WebDriverWait(driver, 20);
-		//d.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//article[@id='10624734_sponsored']//a[contains(@class,'flex-link')]")));
-		d.until(ExpectedConditions.elementToBeClickable(By.xpath("//article[@id='10624734_sponsored']//a[contains(@class,'flex-link')]")));
-		driver.findElement(By.xpath("//article[@id='10624734_sponsored']//a[contains(@class,'flex-link')]")).click();
-
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div/div[1]/main/div/div/div[2]/section[1]/ol/li[1]/div/div/a")).click();
+		driver.quit();
 	}
 
 }
