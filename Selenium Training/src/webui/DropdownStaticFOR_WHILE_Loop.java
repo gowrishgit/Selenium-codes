@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class StaticDropdownFOR_WHILE_Loop {
+public class DropdownStaticFOR_WHILE_Loop {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
