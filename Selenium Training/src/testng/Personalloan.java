@@ -25,7 +25,7 @@ public class Personalloan {
 		System.out.println("AfterSuitePersonalloan");
 	}
 
-	@Test
+	@Test(groups= {"Smoke"})
 	public void Webloginpersonalloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Webloginpersonalloan");

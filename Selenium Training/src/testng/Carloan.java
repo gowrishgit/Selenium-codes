@@ -21,7 +21,7 @@ public class Carloan {
 		// TODO Auto-generated method stub
 		System.out.println("Mobilelogincarloan");
 	}
-	@Test	
+	@Test(groups= {"Smoke"})
 	public void APIlogincarloan() {
 		// TODO Auto-generated method stub
 		System.out.println("APIlogincarloan");

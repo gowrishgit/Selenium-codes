@@ -11,7 +11,7 @@ public class Jewelloan {
 		System.out.println("AfterTestJewelloan");
 	}
 
-	@Test
+	@Test(groups= {"Smoke"})
 	public void Webloginjewelloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Webloginjewelloan");

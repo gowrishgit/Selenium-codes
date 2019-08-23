@@ -18,7 +18,7 @@ public class homeloan {
 		System.out.println("Weblogin");
 	}
 
-	@Test
+	@Test(groups= {"Smoke"})
 	public void Mobileloginhomeloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Mobileloginhomeloan");
