@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test thread-count="5" name="Loan Module1">
+		<classes>
+			<class name="testng.Personalloan" />
+			<class name="testng.homeloan" />
+
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Loan Module2">
+		<classes>
+			<class name="testng.Jewelloan">
+			<methods>
+					<include name="API.*" /><!-- will include test cases which 
+						have mobile keyword -->
+				</methods>
+				</class>
+			<class name="testng.Carloan">
+				<methods>
+					<exclude name="Mobile.*" /><!-- will exclude test cases which 
+						have mobile keyword -->
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
