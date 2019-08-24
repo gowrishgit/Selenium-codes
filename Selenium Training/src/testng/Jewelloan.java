@@ -1,5 +1,8 @@
 package testng;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -26,6 +29,7 @@ public class Jewelloan {
 	public void Mobileloginjewelloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Mobileloginjewelloan");
+		Assert.assertTrue(false);
 	}
 
 	@Test
