@@ -1,41 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="12" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-23T22:46:36Z" name="Loan Department Suite- Smoke Test" finished-at="2019-08-23T22:46:36Z" duration-ms="79">
+  <suite started-at="2019-08-24T01:47:42Z" name="Default suite" finished-at="2019-08-24T01:47:42Z" duration-ms="147">
     <groups>
       <group name="Smoke">
-        <method signature="Carloan.APIlogincarloan()[pri:0, instance:testng.Carloan@2aa5fe93]" name="APIlogincarloan" class="testng.Carloan"/>
-        <method signature="Jewelloan.Webloginjewelloan()[pri:0, instance:testng.Jewelloan@3b2cf7ab]" name="Webloginjewelloan" class="testng.Jewelloan"/>
-        <method signature="Personalloan.Webloginpersonalloan()[pri:0, instance:testng.Personalloan@f2f2cc1]" name="Webloginpersonalloan" class="testng.Personalloan"/>
-        <method signature="homeloan.Mobileloginhomeloan()[pri:0, instance:testng.homeloan@3a079870]" name="Mobileloginhomeloan" class="testng.homeloan"/>
+        <method signature="Personalloan.Webloginpersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" name="Webloginpersonalloan" class="testng.Personalloan"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2019-08-23T22:46:36Z" name="Smoke Test" finished-at="2019-08-23T22:46:36Z" duration-ms="79">
+    <test started-at="2019-08-24T01:47:42Z" name="Default test" finished-at="2019-08-24T01:47:42Z" duration-ms="147">
       <class name="testng.Personalloan">
-        <test-method signature="Webloginpersonalloan()[pri:0, instance:testng.Personalloan@f2f2cc1]" started-at="2019-08-23T22:46:36Z" name="Webloginpersonalloan" finished-at="2019-08-23T22:46:36Z" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="BeforeTestPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeTestPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestPersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method signature="APIloginPersonalloan(java.lang.String, java.lang.String)[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="APIloginPersonalloan" data-provider="getData" finished-at="2019-08-24T01:47:42Z" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FirstPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIloginPersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method signature="APIloginPersonalloan(java.lang.String, java.lang.String)[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="APIloginPersonalloan" data-provider="getData" finished-at="2019-08-24T01:47:42Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SecondUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SecondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIloginPersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method signature="APIloginPersonalloan(java.lang.String, java.lang.String)[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="APIloginPersonalloan" data-provider="getData" finished-at="2019-08-24T01:47:42Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ThirdUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ThirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIloginPersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method signature="APIloginpersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="APIloginpersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIloginpersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method signature="Mobileloginpersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="Mobileloginpersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mobileloginpersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method is-config="true" signature="BeforeMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="BeforeMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodPersonalloan -->
+        <test-method signature="Webloginpersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="Webloginpersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Webloginpersonalloan -->
+        <test-method is-config="true" signature="AfterMethodPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterMethodPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodPersonalloan -->
+        <test-method is-config="true" signature="AfterTestPersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:42Z" name="AfterTestPersonalloan" finished-at="2019-08-24T01:47:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestPersonalloan -->
+        <test-method is-config="true" signature="AfterSuitePersonalloan()[pri:0, instance:testng.Personalloan@6b419da]" started-at="2019-08-24T01:47:43Z" name="AfterSuitePersonalloan" finished-at="2019-08-24T01:47:43Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuitePersonalloan -->
       </class> <!-- testng.Personalloan -->
-      <class name="testng.Jewelloan">
-        <test-method signature="Webloginjewelloan()[pri:0, instance:testng.Jewelloan@3b2cf7ab]" started-at="2019-08-23T22:46:36Z" name="Webloginjewelloan" finished-at="2019-08-23T22:46:36Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Webloginjewelloan -->
-      </class> <!-- testng.Jewelloan -->
-      <class name="testng.homeloan">
-        <test-method signature="Mobileloginhomeloan()[pri:0, instance:testng.homeloan@3a079870]" started-at="2019-08-23T22:46:36Z" name="Mobileloginhomeloan" finished-at="2019-08-23T22:46:36Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mobileloginhomeloan -->
-      </class> <!-- testng.homeloan -->
-      <class name="testng.Carloan">
-        <test-method signature="APIlogincarloan()[pri:0, instance:testng.Carloan@2aa5fe93]" started-at="2019-08-23T22:46:36Z" name="APIlogincarloan" finished-at="2019-08-23T22:46:36Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APIlogincarloan -->
-      </class> <!-- testng.Carloan -->
-    </test> <!-- Smoke Test -->
-  </suite> <!-- Loan Department Suite- Smoke Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

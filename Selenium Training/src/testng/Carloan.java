@@ -10,13 +10,13 @@ public class Carloan {
 		// TODO Auto-generated method stub
 		System.out.println("AfterTestCarloan");
 	}
-	@Test
+	@Test(enabled=false)
 	public void Weblogincarloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Weblogincarloan");
 	}
 	
-	@Test	
+	@Test
 	public void Mobilelogincarloan() {
 		// TODO Auto-generated method stub
 		System.out.println("Mobilelogincarloan");

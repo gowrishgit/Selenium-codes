@@ -24,7 +24,7 @@ public class homeloan {
 		System.out.println("Mobileloginhomeloan");
 	}
 
-	@Test
+	@Test(dependsOnMethods = {"Webloginhomeloan"})	
 	public void APIloginhomeloan() {
 		// TODO Auto-generated method stub
 		System.out.println("APIloginhomeloan");

@@ -2,7 +2,10 @@ package testng;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
 
 public class Jewelloan {
 	@AfterTest
@@ -10,11 +13,13 @@ public class Jewelloan {
 		// TODO Auto-generated method stub
 		System.out.println("AfterTestJewelloan");
 	}
-
+@Parameters({"URL", "Username"})
 	@Test(groups= {"Smoke"})
-	public void Webloginjewelloan() {
+	public void Webloginjewelloan(String urlname,String username) {
 		// TODO Auto-generated method stub
 		System.out.println("Webloginjewelloan");
+		System.out.println(urlname);
+		System.out.println(username);
 	}
 
 	@Test
