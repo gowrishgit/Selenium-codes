@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <parameter name="Username" value="username1"/>
+  <parameter name="URL" value="www.google.com"/>
+  <listeners>
+    <listener class-name="testng.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Loan Module2(failed)">
+    <classes>
+      <class name="testng.Jewelloan">
+        <methods>
+          <include name="AfterTestJewelloan"/>
+          <include name="Mobileloginjewelloan"/>
+          <include name="BeforeTestJewelloan"/>
+        </methods>
+      </class> <!-- testng.Jewelloan -->
+    </classes>
+  </test> <!-- Loan Module2(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
