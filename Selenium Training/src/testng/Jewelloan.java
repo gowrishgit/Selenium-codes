@@ -1,14 +1,10 @@
 package testng;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.Parameter;
 
 public class Jewelloan {
 	@AfterTest
