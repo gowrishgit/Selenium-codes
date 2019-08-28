@@ -1,0 +1,6 @@
+00:00:09.621 [main] ERROR Log4j_Alpha.Demo - Button is not displayed
+00:00:09.626 [main] FATAL Log4j_Alpha.Demo - Button is missing
+00:00:22.086 [main] ERROR Log4j_Alpha.Demo - Button is not displayed
+00:00:22.093 [main] FATAL Log4j_Alpha.Demo - Button is missing
+00:00:45.517 [main] ERROR Log4j_Alpha.Demo - Button is not displayed
+00:00:45.523 [main] FATAL Log4j_Alpha.Demo - Button is missing
