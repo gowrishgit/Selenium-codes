@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-28T05:46:32Z" name="Default suite" finished-at="2019-08-28T05:46:52Z" duration-ms="20070">
+  <suite started-at="2019-08-28T09:32:06Z" name="Default suite" finished-at="2019-08-28T09:32:06Z" duration-ms="52">
     <groups>
     </groups>
-    <test started-at="2019-08-28T05:46:32Z" name="Default test" finished-at="2019-08-28T05:46:52Z" duration-ms="20070">
-      <class name="pageobjectpattern.LoginapplicationPF">
-        <test-method signature="Login()[pri:0, instance:pageobjectpattern.LoginapplicationPF@25a65b77]" started-at="2019-08-28T05:46:32Z" name="Login" finished-at="2019-08-28T05:46:52Z" duration-ms="20013" status="PASS">
+    <test started-at="2019-08-28T09:32:06Z" name="Default test" finished-at="2019-08-28T09:32:06Z" duration-ms="52">
+      <class name="testng.Globalparameter">
+        <test-method signature="Login()[pri:0, instance:testng.Globalparameter@214b199c]" started-at="2019-08-28T09:32:06Z" name="Login" finished-at="2019-08-28T09:32:06Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-      </class> <!-- pageobjectpattern.LoginapplicationPF -->
+      </class> <!-- testng.Globalparameter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
