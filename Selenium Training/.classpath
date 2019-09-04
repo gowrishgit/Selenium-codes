@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="D:/Selenium Training/Selenium Files/TestNG/testng-6.14.3.jar"/>
 	<classpathentry kind="lib" path="D:/Selenium Training/Selenium Files/apache-log4j-2.12.1-bin/log4j-api-2.12.1.jar"/>
 	<classpathentry kind="lib" path="D:/Selenium Training/Selenium Files/apache-log4j-2.12.1-bin/log4j-core-2.12.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Training/Selenium Files/mysql-connector-java/mysql-connector-java-8.0.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,8 @@
+05:49:21.105 [main] INFO  resources.base - HomePage testing stated
+05:49:41.613 [main] INFO  resources.base - Broswer is closing
+05:49:44.061 [main] INFO  resources.base - Driver Is Intialized
+05:49:51.043 [main] INFO  resources.base - validateTitle testing stated
+05:49:51.967 [main] INFO  resources.base - Broswer is closing
+06:20:08.736 [main] INFO  resources.base - Driver Is Intialized
+06:20:15.329 [main] INFO  resources.base - validateNavigationBar testing stated
+06:20:15.498 [main] INFO  resources.base - Navigation bar is validated
